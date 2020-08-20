@@ -4,4 +4,8 @@ source "https://rubygems.org"
 gemspec
 
 gem "rake", "~> 12.0"
+gem 'pry'
 gem 'poke-api-v2'
+gem 'HTTParty'
+gem 'net/http'
+gem 'json'
