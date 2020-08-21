@@ -22,4 +22,4 @@ class GetPokemon
 end    
 
 new = GetPokemon.new 
-puts new.get_pokemon
+new.get_pokemon
