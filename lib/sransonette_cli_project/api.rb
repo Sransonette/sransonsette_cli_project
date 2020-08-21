@@ -1,28 +1,25 @@
-require 'httparty'
+
 require 'net/http'
-require 'open-url'
+require 'open-uri'
 require 'json'
 require 'pry'
 require 'poke-api-v2'
 
 
-
-data_url = "https://pokeapi.co/api/v2/"
-
-response = HTTParty.get(data_url)
-
-
-#class GetPrograms 
-	#URL = "https://pokeapi.co/api/v2/"
+class GetPokemon
+	URL = "https://pokeapi.co/api/v2/pokemon"
 	
-	#def get_programs 
-	  #uri = URI.parse(URL)
-	  #response = Net::HTTP.get_response(uri)
-	  #pokemon = JSON.parse(response.body)
-	  #pokemon.collect do |names|
-	        #program["names"] 
-	  #end
-    #end
-#end    
+	def get_pokemon
+	  uri = URI.parse(URL)
+	  response = Net::HTTP.get_response(uri)
+	  pokemon = JSON.parse(response.body)
+	  pokemon["results"].collect do |item|
+	     item["name"] 
+	  #binding.pry
+	  end
+    end
+    
+end    
 
-#PokeApi.get(pokemon: 'bulbasaur')
+new = GetPokemon.new 
+puts new.get_pokemon
