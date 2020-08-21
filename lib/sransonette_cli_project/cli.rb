@@ -1,10 +1,11 @@
-class SransonetteCliProject::Cli 
+class Cli 
+   
    
     def call  
         puts "Welcome to your personal Pokedex!"
         #get_pokemon 
-        #get_types_for(pokemon)
-        #list_types
+        
+        
     end
 
     def 

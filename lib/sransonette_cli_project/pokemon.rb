@@ -1,6 +1,9 @@
 require 'pry'
 
-class Sransonette_cli_project::Pokemon
+
+
+class Pokemon
+  
   
   attr_accessor :name 
   
@@ -12,5 +15,5 @@ class Sransonette_cli_project::Pokemon
   end 
   
   
-  
+  Pokemon.all
 end 
