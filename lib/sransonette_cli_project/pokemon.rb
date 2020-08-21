@@ -13,6 +13,4 @@ class Sransonette_cli_project::Pokemon
   
   
   
-  
-  
 end 
