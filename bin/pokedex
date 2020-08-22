@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '../lib/sransonette_cli_project'
+require_relative "../lib/sransonette_cli_project"
 
 SransonetteCliProject::Cli.new.call

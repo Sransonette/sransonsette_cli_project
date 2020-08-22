@@ -6,7 +6,7 @@ require 'pry'
 require 'poke-api-v2'
 
 
-class GetPokemon
+class SransonetteCliProject::GetPokemon
 	URL = "https://pokeapi.co/api/v2/pokemon"
 	
 	def get_pokemon
@@ -15,11 +15,13 @@ class GetPokemon
 	  pokemon = JSON.parse(response.body)
 	  pokemon["results"].collect do |item|
 	     item["name"] 
-	  #binding.pry
+	  SransonetteCliProject::Pokemon.new(item["name"])
 	  end
-    end
-    
+  end
+  
+  
 end    
+
 
 new = SransonetteCliProject::GetPokemon.new 
 new.get_pokemon

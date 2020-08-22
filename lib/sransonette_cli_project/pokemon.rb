@@ -1,27 +1,30 @@
-require_relative "./version.rb"
 require 'pry'
+require_relative "./version.rb"
 
 
-
-class Pokemon
+class SransonetteCliProject::Pokemon
   
   
   attr_accessor :pokemon, :name, :id 
   
   @@all = [] 
   
-  def initialize 
+  def initialize(pokemon)
     @pokemon = pokemon
     @name = name 
     @id = id
-    
+    @@all << self
+     binding.pry
   end
   
   def self.all 
     @@all
-  #binding.pry
+ 
   end 
   
+  #def fill 
+    #SransonetteCliProject::GetPokemon|key, value|
   
-  Pokemon.all
+  
+  SransonetteCliProject::Pokemon.all
 end 
