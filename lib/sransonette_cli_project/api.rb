@@ -16,6 +16,7 @@ class SransonetteCliProject::GetPokemon
 	  pokemon["results"].collect do |item|
 	     item["name"] 
 	  SransonetteCliProject::Pokemon.new(item["name"])
+	  #binding.pry
 	  end
   end
   

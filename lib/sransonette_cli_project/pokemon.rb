@@ -5,16 +5,14 @@ require_relative "./version.rb"
 class SransonetteCliProject::Pokemon
   
   
-  attr_accessor :pokemon, :name, :id 
+  attr_accessor :pokemon
   
   @@all = [] 
   
   def initialize(pokemon)
     @pokemon = pokemon
-    @name = name 
-    @id = id
     @@all << self
-     binding.pry
+     #binding.pry
   end
   
   def self.all 
