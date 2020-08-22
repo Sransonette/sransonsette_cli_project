@@ -1,4 +1,4 @@
-
+require_relative "./version.rb"
 require 'net/http'
 require 'open-uri'
 require 'json'
@@ -21,5 +21,5 @@ class GetPokemon
     
 end    
 
-new = GetPokemon.new 
+new = SransonetteCliProject::GetPokemon.new 
 new.get_pokemon
