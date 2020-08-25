@@ -67,7 +67,7 @@ class SransonetteCliProject::Cli
       
     def pokedex_data(first)
       last = first + 19
-      if SransonetteCliProject::Pokemon.all.count < 20
+      if SransonetteCliProject::Pokemon.all.count 
         last = -1
       end
     all = SransonetteCliProject::Pokemon.all[first]
