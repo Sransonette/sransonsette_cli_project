@@ -20,7 +20,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This "app" is used to show the order of pokemon. 
+
+To use this basic pokedex fir you must put git clone git@github.com:Sransonette/sransonsette_cli_project.git into the terminal. 
+
+Next you will need to bundle install so you have the required GEMs. 
+
+Finally, input ./bin/pokedex into the terminal to discover pokemon by entering the suggested numbers. 
 
 ## Development
 
