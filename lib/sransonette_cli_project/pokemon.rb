@@ -20,9 +20,5 @@ class SransonetteCliProject::Pokemon
  
   end 
   
-  #def fill 
-    #SransonetteCliProject::GetPokemon|key, value|
-  
-  
   SransonetteCliProject::Pokemon.all
 end 
