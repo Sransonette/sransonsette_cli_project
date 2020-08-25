@@ -60,7 +60,7 @@ class SransonetteCliProject::Cli
           exit
           else
           puts "Please Try Again"
-          pokedex_data
+          pokedex_menu
           end
         end
       end
