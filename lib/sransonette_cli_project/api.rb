@@ -13,10 +13,11 @@ class SransonetteCliProject::GetPokemon
 	  uri = URI.parse(URL)
 	  response = Net::HTTP.get_response(uri)
 	  pokemon = JSON.parse(response.body)
-	  pokemon["results"].collect do |item|
-	     item["name"] 
-	  SransonetteCliProject::Pokemon.new(item["name"])
 	  #binding.pry
+	  pokemon["results"].collect do |item, url|
+	     #item["name"] 
+	     
+	  SransonetteCliProject::Pokemon.new(item["name"])
 	  end
   end
   
@@ -24,5 +25,3 @@ class SransonetteCliProject::GetPokemon
 end    
 
 
-new = SransonetteCliProject::GetPokemon.new 
-new.get_pokemon

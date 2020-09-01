@@ -20,5 +20,5 @@ class SransonetteCliProject::Pokemon
  
   end 
   
-  SransonetteCliProject::Pokemon.all
+ 
 end 
